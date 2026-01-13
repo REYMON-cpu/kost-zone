@@ -1,0 +1,25 @@
+.kost-navbar {
+    background-color: #1f2937;
+}
+
+.kost-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.kost-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kost-detail-img {
+    border-radius: 10px;
+}
+
+h2,
+h3 {
+    color: #1f2937;
+}
