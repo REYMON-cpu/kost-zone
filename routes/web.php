@@ -22,3 +22,5 @@ Route::get('/kost/edit/{id}', [KostController::class,'edit']);
 Route::put('/kost/update/{id}', [KostController::class,'update']);
 Route::get('/kost/{id}', [LandingController::class,'detail']);
 
+Route::view('/ketentuan', 'landing.ketentuan')->name('ketentuan');
+

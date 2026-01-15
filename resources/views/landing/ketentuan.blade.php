@@ -1,13 +1,8 @@
-<div class="modal fade" id="ketentuanModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5>Ketentuan Kost Zone</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p>Website ini digunakan untuk mencari dan mendaftarkan kost.</p>
-            </div>
-        </div>
-    </div>
-</div>
+@extends('layouts.app')
+
+@section('content')
+<h3>Ketentuan Kost Zone</h3>
+<p>
+    Ketentuan penggunaan aplikasi Kost Zone sesuai dengan kebijakan yang berlaku.
+</p>
+@endsection

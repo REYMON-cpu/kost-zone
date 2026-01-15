@@ -1,25 +1,56 @@
-.kost-navbar {
-    background-color: #1f2937;
-}
-
-.kost-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
+body {
+    font-family: Arial, sans-serif;
     background: #fff;
+    color: #000;
 }
 
-.kost-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.kost-header {
+    text-align: center;
+    padding: 20px;
 }
 
-.kost-detail-img {
-    border-radius: 10px;
+.kost-header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
-h2,
-h3 {
-    color: #1f2937;
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-bar {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.kost-box {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.kost-name {
+    font-weight: bold;
+}
+
+.kost-price {
+    font-weight: bold;
+}
+
+.kost-detail-btn {
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: black;
+}
+
+.kost-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
 }

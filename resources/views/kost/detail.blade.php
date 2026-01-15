@@ -1,28 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row">
-    <div class="col-md-6">
-        <img src="{{ asset('storage/'.$kost->images->first()->image_path) }}"
-             class="img-fluid kost-detail-img">
-    </div>
 
-    <div class="col-md-6">
-        <h3 class="fw-bold">{{ $kost->nama_kost }}</h3>
-        <h4 class="text-success">
-            Rp {{ number_format($kost->harga) }} / bulan
-        </h4>
+<h2>{{ $kost->nama_kost }}</h2>
+<h3 class="text-success">
+    Rp. {{ number_format($kost->harga) }}
+</h3>
 
-        <hr>
+<button class="btn btn-dark mb-3">Hubungi Pemilik</button>
 
-        <p>{{ $kost->spesifikasi }}</p>
+<p>
+    <strong>Tipe:</strong>
+    {{ ucfirst($kost->tipe_kost) }} |
+    Maks {{ $kost->max_penghuni }} orang
+</p>
 
-        <p class="mt-3">
-            <strong>Pemilik:</strong> {{ $kost->user->name }}<br>
-            <strong>Kontak:</strong> {{ $kost->user->phone }}
-        </p>
+<p><strong>Lokasi:</strong> {{ $kost->kecamatan }}, {{ $kost->kota }}</p>
 
-        <a href="/" class="btn btn-secondary mt-3">Kembali</a>
-    </div>
-</div>
+<p><strong>Pembayaran:</strong> {{ ucfirst($kost->pembayaran) }}</p>
+
+<p><strong>Spesifikasi:</strong></p>
+<ul>
+    <li>{{ $kost->spesifikasi }}</li>
+</ul>
+
+<a href="/" class="btn btn-secondary">Kembali</a>
+
 @endsection
